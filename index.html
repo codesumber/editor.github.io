@@ -3,8 +3,11 @@
     <link rel="stylesheet" href="https://unpkg.com/easymde/dist/easymde.min.css">
     <script src="https://unpkg.com/easymde/dist/easymde.min.js"></script>
   </head>
+  <body>
+  <title> Simple Free editor Markdown </title>
   <h1> hello word </h1>
-  <textarea id="my-text-area"></textarea>
+  <textarea id="Myarea"></textarea>
+  </body>
   <script>
   var easyMDE = new EasyMDE({
         autoDownloadFontAwesome: false,
@@ -14,8 +17,8 @@
             uniqueId: 'mde-autosave-demo'
         },
         showIcons: ['strikethrough', 'code', 'table', 'redo', 'heading', 'undo', 'heading-bigger', 'heading-smaller', 'heading-1', 'heading-2', 'heading-3', 'clean-block', 'horizontal-rule'],
-        element: document.getElementById('my-text-area'),
-        initialValue: '## H1 title \n simpleE ditor Markdown by '
+        element: document.getElementById('Myarea'),
+        initialValue: '## Markdown Editor \n by [EasyMDE](https://github.com/Ionaru/easy-markdown-editor)'
     });
   </script>
 </html>
