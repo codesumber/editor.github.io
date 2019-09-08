@@ -6,6 +6,16 @@
   <h1> hello word </h1>
   <textarea id="my-text-area"></textarea>
   <script>
-  var easyMDE = new EasyMDE({element: document.getElementById('my-text-area')});
+  var easyMDE = new EasyMDE({
+        autoDownloadFontAwesome: false,
+        autosave: {
+            enabled: true,
+            delay: 1000,
+            uniqueId: 'mde-autosave-demo'
+        },
+        showIcons: ['strikethrough', 'code', 'table', 'redo', 'heading', 'undo', 'heading-bigger', 'heading-smaller', 'heading-1', 'heading-2', 'heading-3', 'clean-block', 'horizontal-rule'],
+        element: document.getElementById('my-text-area'),
+        initialValue: '## H1 title \n simpleE ditor Markdown by '
+    });
   </script>
 </html>
